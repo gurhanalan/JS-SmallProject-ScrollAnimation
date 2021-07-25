@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    /* height: 100vh;
+    overflow: hidden; */
+    margin: 0;
+    background: linear-gradient(135deg, #e16245 0%, #ff9d58 100%);
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    letter-spacing: 2px;
+    font-size: 3rem;
+}
+.card {
+    max-width: 40rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    border-radius: 5rem;
+    background: linear-gradient(135deg, #00253b 0%, #184c64 100%);
+}
+p {
+    font-size: 1.7rem;
+    text-align: justify;
+    color: white;
+    font-size: 600;
+    line-height: 1.6;
+}
+
+button {
+    background: linear-gradient(
+        137deg,
+        rgba(74, 169, 165, 1) 0%,
+        rgba(169, 213, 201, 1) 1%,
+        rgba(234, 95, 69, 1) 10%,
+        rgba(251, 137, 70, 1) 100%
+    );
+    background-size: 8000% 8000%;
+    user-select: none;
+    white-space: nowrap;
+    padding: 1.5rem 3rem;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-size: 100% 100%;
+}
