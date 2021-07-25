@@ -24,6 +24,7 @@ body {
     margin: 0;
     background: linear-gradient(135deg, #e16245 0%, #ff9d58 100%);
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -43,6 +44,7 @@ h1 {
     gap: 3rem;
     border-radius: 5rem;
     background: linear-gradient(135deg, #00253b 0%, #184c64 100%);
+    transition: transform 0.5s;
 }
 p {
     font-size: 1.7rem;
@@ -76,4 +78,16 @@ button {
 
 button:hover {
     background-size: 100% 100%;
+}
+
+.card:nth-child(odd) {
+    transform: translateX(-200%);
+}
+.card:nth-child(even) {
+    transform: translateX(200%);
+}
+
+.card-display {
+    transform: translateX(0) !important;
+    transition: transform 0.5s;
 }
