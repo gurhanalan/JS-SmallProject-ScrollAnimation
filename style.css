@@ -81,10 +81,10 @@ button:hover {
 }
 
 .card:nth-child(odd) {
-    transform: translateX(-200%);
+    transform: translateX(-400%);
 }
 .card:nth-child(even) {
-    transform: translateX(200%);
+    transform: translateX(400%);
 }
 
 .card-display {
